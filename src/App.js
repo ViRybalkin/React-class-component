@@ -1,9 +1,10 @@
-import Users from './components/Users';
+// = Components =
+import UserFinder from './components/UserFinder';
 
 function App() {
   return (
     <div>
-      <Users />
+      <UserFinder />
     </div>
   );
 }
