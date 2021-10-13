@@ -6,15 +6,20 @@ import classes from './User.module.css';
 
 
 class User  extends Component{
+  constructor() {
+    super();
+
+  }
+  componentWillUnmount() {
+    console.log('unmount');
+  }
+
   render() {
     return (
+      <div>
       <li className={classes.user}>{this.props.name}</li>
+      </div>
     )
   }
 }
-
-// const User = (props) => {
-//   return <li className={classes.user}>{props.name}</li>;
-// };
-
 export default User;
